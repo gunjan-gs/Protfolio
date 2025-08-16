@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary page title for browser tabs and search engines -->
+    <title>Gunjan Soni | Portfolio</title>
+    
+    <!-- SEO meta tags for search engine optimization -->
+    <meta name="description" content="Passionate full-stack developer building fast, modern, animated web experiences with clean code and great UX. Based in Bhopal, India.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Theme color for mobile browsers and PWA support -->
+    <meta name="theme-color" content="#1a1a2e">
+    
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://gunjansoni.dev">
+    
+    <!-- Open Graph meta tags for social media sharing (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Gunjan Soni - Full-Stack Web Developer">
+    <meta property="og:description" content="Passionate full-stack developer building fast, modern, animated web experiences with clean code and great UX.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gunjansoni.dev">
+    <!-- Base64 encoded SVG image for social media previews -->
+    <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MzAiIHZpZXdCb3g9IjAgMCAxMjAwIDYzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMWExYTJlIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE2MjEzZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjx0ZXh0IHg9IjYwMCIgeT0iMzE1IiBmaWxsPSIjNjM2NmYxIiBmb250LXNpemU9IjQ4IiBmb250LWZhbWlseT0iUG9wcGlucyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3VuamFuIFNvbmk8L3RleHQ+Cjx0ZXh0IHg9IjYwMCIgeT0iMzY1IiBmaWxsPSIjOWNhM2FmIiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iUG9wcGlucyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnVsbC1TdGFjayBXZWIgRGV2ZWxvcGVyPC90ZXh0Pgo8L3N2Zz4K">
+    
+    <!-- Twitter Card meta tags for Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gunjan Soni - Full-Stack Web Developer">
+    <meta name="twitter:description" content="Passionate full-stack developer building fast, modern, animated web experiences with clean code and great UX.">
+    <meta name="twitter:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MzAiIHZpZXdCb3g9IjAgMCAxMjAwIDYzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMWExYTJlIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE2MjEzZSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjx0ZXh0IHg9IjYwMCIgeT0iMzE1IiBmaWxsPSIjNjM2NmYxIiBmb250LXNpemU9IjQ4IiBmb250LWZhbWlseT0iUG9wcGlucyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3VuamFuIFNvbmk8L3RleHQ+Cjx0ZXh0IHg9IjYwMCIgeT0iMzY1IiBmaWxsPSIjOWNhM2FmIiBmb250LXNpemU9IjI0IiBmb250LWZhbWlseT0iUG9wcGlucyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnVsbC1TdGFjayBXZWIgRGV2ZWxvcGVyPC90ZXh0Pgo8L3N2Zz4K">
+    
+    <!-- Font preconnections for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts import for Poppins font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) library for scroll-triggered animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured data for search engines (JSON-LD format) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gunjan Soni",
+        "jobTitle": "Full-Stack Web Developer",
+        "email": "gunjansoni27official@gmail.com",
+        "telephone": "+91 7974970843",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bhopal",
+            "addressCountry": "India"
+        },
+        "sameAs": [
+            "https://github.com/gunjansoni",
+            "https://linkedin.com/in/gunjansoni"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Fixed navigation bar with glassmorphism effect -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Brand logo section with animated SVG -->
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <!-- Custom animated logo with gradient colors and particle effects -->
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Main logo shape with gradient fill -->
+                        <path d="M8 20C8 12.268 14.268 6 22 6C26.418 6 30.274 8.274 32.618 11.764L28.382 14.236C27.058 12.274 24.686 11 22 11C17.037 11 13 15.037 13 20C13 24.963 17.037 29 22 29C24.686 29 27.058 27.726 28.382 25.764L32.618 28.236C30.274 31.726 26.418 34 22 34C14.268 34 8 27.732 8 20Z" fill="url(#logoGradient1)"/>
+                        <!-- Accent rectangle in logo -->
+                        <rect x="22" y="18" width="8" height="4" fill="url(#logoGradient1)"/>
+                        <!-- Curved path element -->
+                        <path d="M42 14C42 10.686 44.686 8 48 8C51.314 8 54 10.686 54 14C54 17.314 51.314 20 48 20C44.686 20 42 22.686 42 26C42 29.314 44.686 32 48 32C51.314 32 54 29.314 54 26" stroke="url(#logoGradient2)" stroke-width="3" stroke-linecap="round" fill="none"/>
+                        
+                        <!-- Animated particles around the logo -->
+                        <circle cx="65" cy="12" r="2" fill="url(#logoGradient1)" opacity="0.8">
+                            <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="70" cy="20" r="1.5" fill="url(#logoGradient2)" opacity="0.6">
+                            <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="67" cy="28" r="1" fill="url(#logoGradient1)" opacity="0.7">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+                        </circle>
+                        
+                        <!-- Gradient definitions for logo colors -->
+                        <defs>
+                            <linearGradient id="logoGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6366f1"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                            <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8b5cf6"/>
+                                <stop offset="100%" stop-color="#ec4899"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Mobile menu toggle button (hamburger menu) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <!-- Three lines that form hamburger icon and animate to X when active -->
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation menu items -->
+            <ul class="nav-menu mobile-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section with animated background and interactive elements -->
+    <section class="hero" id="home">
+        <!-- Canvas for particle animation background -->
+        <canvas class="particle-canvas" id="particleCanvas"></canvas>
+        
+        <div class="hero-content">
+            <div class="hero-layout">
+                <!-- Left side: Text content with animations -->
+                <div class="hero-text-side" data-aos="fade-right">
+                    <!-- Main heading with gradient text effect -->
+                    <h1 class="hero-title enhanced-title">
+                        Hi, I am <span class="gradient-text">Gunjan</span>
+                    </h1>
+                    
+                    <!-- Animated subtitle with typing effect -->
+                    <div class="hero-subtitle enhanced-subtitle">
+                        <span id="typedText">Full-Stack Web Developer</span>
+                    </div>
+                    
+                    <!-- Description paragraph -->
+                    <div class="hero-description enhanced-description">
+                        <p>Passionate about creating fast, modern, and animated web experiences with clean code and exceptional user experience.</p>
+                    </div>
+                    
+                    <!-- Call-to-action buttons -->
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <button class="btn btn-secondary" id="downloadCV">
+                            <!-- Download icon SVG -->
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            <a href="./assete/my_resume.pdf"></a>
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Right side: Interactive animation container -->
+                <div class="hero-animation-side" data-aos="fade-left">
+                    <div class="animation-container">
+                        <!-- Floating elements representing different aspects of development -->
+                        <div class="floating-elements">
+                            <!-- Code block representation -->
+                            <div class="code-block floating-element" data-delay="0">
+                                <div class="code-line"></div>
+                                <div class="code-line short"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line medium"></div>
+                            </div>
+                            
+                            <!-- Design elements representation -->
+                            <div class="design-element floating-element" data-delay="1">
+                                <div class="design-circle"></div>
+                                <div class="design-square"></div>
+                                <div class="design-triangle"></div>
+                            </div>
+                            
+                            <!-- Technology stack representation -->
+                            <div class="tech-stack floating-element" data-delay="2">
+                                <div class="tech-icon react"></div>
+                                <div class="tech-icon node"></div>
+                                <div class="tech-icon js"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Central interactive orb with rotating rings -->
+                        <div class="interactive-orb">
+                            <div class="orb-core"></div>
+                            <div class="orb-ring ring-1"></div>
+                            <div class="orb-ring ring-2"></div>
+                            <div class="orb-ring ring-3"></div>
+                            
+                            <!-- Orbiting particles around the central orb -->
+                            <div class="orb-particles">
+                                <div class="orb-particle"></div>
+                                <div class="orb-particle"></div>
+                                <div class="orb-particle"></div>
+                                <div class="orb-particle"></div>
+                                <div class="orb-particle"></div>
+                                <div class="orb-particle"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pulse wave effects emanating from center -->
+                        <div class="pulse-waves">
+                            <div class="pulse-wave"></div>
+                            <div class="pulse-wave"></div>
+                            <div class="pulse-wave"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section with personal information and quick facts -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section title with animated underline -->
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            
+            <div class="about-content">
+                <!-- Main about text with decorative accent -->
+                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
+                    <p>I'm Gunjan Soni, a Full-Stack Web Developer from Bhopal, India, passionate about turning ideas into fast, modern, and interactive web applications. I combine clean, maintainable code with creative, user-focused design to deliver experiences that look great and perform even better. Skilled in both front-end and back-end development, I work with the latest technologies to ensure every project is responsive, optimized, and impactful. My goal is simple — build digital solutions that leave a lasting impression.</p>
+                    
+                    <!-- Decorative star accent -->
+                    <div class="about-accent">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L25 15H35L27.5 22.5L30 32.5L20 27.5L10 32.5L12.5 22.5L5 15H15L20 5Z" fill="url(#accentGradient)"/>
+                            <defs>
+                                <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Quick facts section with contact information -->
+                <div class="quick-facts" data-aos="fade-up" data-aos-delay="400">
+                    <div class="fact-item">
+                        <strong>Name:</strong> Gunjan Soni
+                    </div>
+                    <div class="fact-item">
+                        <strong>Email:</strong> <a href="mailto:gunjansoni27official@gmail.com">gunjansoni27official@gmail.com</a>
+                    </div>
+                    <div class="fact-item">
+                        <strong>Phone:</strong> <a href="tel:+917974970843">+91 7974970843</a>
+                    </div>
+                    <div class="fact-item">
+                        <strong>Location:</strong> <a href="https://maps.google.com/?q=Bhopal,India" target="_blank" rel="noopener">Bhopal, India</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools and workflow section showcasing development tools -->
+    <section class="tools" id="tools">
+        <!-- Animated background with floating shapes -->
+        <div class="tools-background"></div>
+        
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">🛠 Tools & Workflow</h2>
+            
+            <!-- Grid of tool cards with hover effects -->
+            <div class="tools-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- VS Code tool card -->
+                <div class="tool-card" data-tool="vscode" aria-label="VS Code">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M34.5 4.5L13.5 25.5L6 18L4.5 19.5L13.5 28.5L34.5 7.5L43.5 16.5V4.5H34.5Z" fill="#007ACC"/>
+                            <path d="M34.5 43.5L13.5 22.5L6 30L4.5 28.5L13.5 19.5L34.5 40.5L43.5 31.5V43.5H34.5Z" fill="#007ACC"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">VS Code</span>
+                </div>
+                
+                <!-- GitHub tool card -->
+                <div class="tool-card" data-tool="github" aria-label="GitHub">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4C12.95 4 4 12.95 4 24C4 32.85 9.35 40.35 16.85 42.85C17.85 43.05 18.2 42.45 18.2 41.95V38.35C12.65 39.55 11.45 35.75 11.45 35.75C10.55 33.55 9.25 32.95 9.25 32.95C7.45 31.65 9.4 31.7 9.4 31.7C11.4 31.85 12.45 33.8 12.45 33.8C14.2 36.95 17.05 36.05 18.3 35.55C18.5 34.25 19.05 33.35 19.65 32.85C15.35 32.35 10.8 30.65 10.8 23.15C10.8 21.05 11.55 19.35 12.5 18.05C12.25 17.55 11.55 15.55 12.7 12.85C12.7 12.85 14.35 12.35 18.15 14.85C19.75 14.4 21.4 14.15 23.05 14.15C24.7 14.15 26.35 14.4 27.95 14.85C31.75 12.35 33.4 12.85 33.4 12.85C34.55 15.55 33.85 17.55 35.3 21.05 35.3 23.15C35.3 30.65 30.75 32.35 26.45 32.85C27.2 33.5 27.9 34.8 27.9 36.8V41.95C27.9 42.45 28.25 43.05 29.25 42.85C36.75 40.35 42.1 32.85 42.1 24C42.1 12.95 33.15 4 24 4Z" fill="#6366f1"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Git &amp; GitHub</span>
+                </div>
+                
+                <!-- Figma tool card -->
+                <div class="tool-card" data-tool="figma" aria-label="Figma">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="18" cy="12" r="6" fill="#FF7262"/>
+                            <circle cx="30" cy="12" r="6" fill="#A259FF"/>
+                            <circle cx="18" cy="24" r="6" fill="#1ABCFE"/>
+                            <circle cx="30" cy="24" r="6" fill="#0ACF83"/>
+                            <circle cx="18" cy="36" r="6" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Figma</span>
+                </div>
+                
+                <!-- Postman tool card -->
+                <div class="tool-card" data-tool="postman" aria-label="Postman">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" fill="#FF6C37"/>
+                            <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="white"/>
+                            <path d="M24 24L32 32L24 40L16 32L24 24Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Postman</span>
+                </div>
+                
+                <!-- Firebase tool card -->
+                <div class="tool-card" data-tool="firebase" aria-label="Firebase">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8.5 36L24 42L39.5 36L32 8L24 18L16 8L8.5 36Z" fill="#FFA000"/>
+                            <path d="M24 18L16 8L8.5 36L24 42V18Z" fill="#F57C00"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Firebase</span>
+                </div>
+                
+                <!-- Docker tool card -->
+                <div class="tool-card" data-tool="docker" aria-label="Docker">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="20" width="32" height="16" rx="2" fill="#0db7ed"/>
+                            <rect x="12" y="16" width="4" height="4" fill="#0db7ed"/>
+                            <rect x="18" y="16" width="4" height="4" fill="#0db7ed"/>
+                            <rect x="24" y="16" width="4" height="4" fill="#0db7ed"/>
+                            <rect x="30" y="16" width="4" height="4" fill="#0db7ed"/>
+                            <rect x="18" y="12" width="4" height="4" fill="#0db7ed"/>
+                            <rect x="24" y="12" width="4" height="4" fill="#0db7ed"/>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Docker</span>
+                </div>
+                
+                <!-- AWS tool card -->
+                <div class="tool-card" data-tool="aws" aria-label="AWS">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="12" width="36" height="24" rx="4" fill="#FF9900"/>
+                            <path d="M12 30L18 18H30L36 30H12Z" fill="#fff" opacity="0.06"/>
+                            <g transform="translate(0,0)">
+                                <path d="M14 22c1.8-3 4.6-5 7.8-5 3.6 0 6.8 2.6 8 6" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+                                <circle cx="24" cy="30" r="2.4" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="tool-name">AWS</span>
+                </div>
+                
+                <!-- Kubernetes tool card -->
+                <div class="tool-card" data-tool="kubernetes" aria-label="Kubernetes">
+                    <div class="tool-icon" role="img" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-label="Kubernetes Icon">
+                            <circle cx="24" cy="24" r="20" fill="#326CE5"/>
+                            <!-- Kubernetes wheel design with spokes and nodes -->
+                            <g transform="translate(24,24)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="0" cy="0" r="12" fill="none"/>
+                                <!-- Eight spokes radiating from center -->
+                                <line x1="0" y1="0" x2="0" y2="-10"/>
+                                <line x1="0" y1="0" x2="0" y2="10"/>
+                                <line x1="0" y1="0" x2="10" y2="0"/>
+                                <line x1="0" y1="0" x2="-10" y2="0"/>
+                                <line x1="0" y1="0" x2="7.07" y2="7.07"/>
+                                <line x1="0" y1="0" x2="-7.07" y2="7.07"/>
+                                <line x1="0" y1="0" x2="7.07" y2="-7.07"/>
+                                <line x1="0" y1="0" x2="-7.07" y2="-7.07"/>
+                                <!-- Nodes at the end of each spoke -->
+                                <circle cx="0" cy="-12" r="2" fill="white" stroke="none"/>
+                                <circle cx="0" cy="12" r="2" fill="white" stroke="none"/>
+                                <circle cx="12" cy="0" r="2" fill="white" stroke="none"/>
+                                <circle cx="-12" cy="0" r="2" fill="white" stroke="none"/>
+                                <circle cx="8.49" cy="8.49" r="2" fill="white" stroke="none"/>
+                                <circle cx="-8.49" cy="8.49" r="2" fill="white" stroke="none"/>
+                                <circle cx="8.49" cy="-8.49" r="2" fill="white" stroke="none"/>
+                                <circle cx="-8.49" cy="-8.49" r="2" fill="white" stroke="none"/>
+                                <!-- Central hub -->
+                                <circle cx="0" cy="0" r="3" fill="white" stroke="none"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="tool-name">Kubernetes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects showcase section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            
+            <!-- Grid of project cards -->
+            <div class="projects-grid">
+                <!-- FinSync project card -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Project preview image (SVG placeholder) -->
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                            <rect width="400" height="200" fill="url(#projectGradient1)"/>
+                            <circle cx="100" cy="100" r="30" fill="rgba(255,255,255,0.2)"/>
+                            <circle cx="300" cy="100" r="20" fill="rgba(255,255,255,0.1)"/>
+                            <defs>
+                                <linearGradient id="projectGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    
+                    <!-- Project information -->
+                    <div class="project-content">
+                        <h3>FinSync</h3>
+                        <p>Smart personal finance tracker to manage income, expenses, and budgets with visual analytics.</p>
+                        
+                        <!-- Technology badges -->
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Firebase</span>
+                        </div>
+                        
+                        <!-- Project links -->
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mate-X project card -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                            <rect width="400" height="200" fill="url(#projectGradient2)"/>
+                            <rect x="50" y="50" width="100" height="100" rx="10" fill="rgba(255,255,255,0.2)"/>
+                            <rect x="250" y="75" width="100" height="50" rx="5" fill="rgba(255,255,255,0.1)"/>
+                            <defs>
+                                <linearGradient id="projectGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#10b981"/>
+                                    <stop offset="100%" stop-color="#3b82f6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mate-X</h3>
+                        <p>Interactive study planner with daily reminders, streak tracker, and Google Calendar sync for effective learning.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML/CSS/JS</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio project card -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                            <rect width="400" height="200" fill="url(#projectGradient3)"/>
+                            <polygon points="200,50 250,100 200,150 150,100" fill="rgba(255,255,255,0.2)"/>
+                            <circle cx="100" cy="150" r="15" fill="rgba(255,255,255,0.1)"/>
+                            <defs>
+                                <linearGradient id="projectGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f59e0b"/>
+                                    <stop offset="100%" stop-color="#ef4444"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio</h3>
+                        <p>Modern animated portfolio showcasing skills, projects, and contact information with smooth user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">AOS/SVG</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with form and social links -->
+    <section class="contact" id="contact">
+        <!-- Dark overlay background -->
+        <div class="contact-background-dark"></div>
+        
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <!-- Contact information and social links -->
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Let's work together</h3>
+                    
+                    <!-- Email contact item -->
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <a href="mailto:gunjansoni27official@gmail.com">gunjansoni27official@gmail.com</a>
+                    </div>
+                    
+                    <!-- Phone contact item -->
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 16.92V19.92C22 20.52 21.39 21 20.92 21C9.11 21 1 12.89 1 1.08C1 0.61 1.48 0 2.08 0H5.08C5.68 0 6.08 0.4 6.08 1C6.08 3.25 6.5 5.45 7.34 7.5C7.43 7.7 7.39 7.94 7.25 8.08L5.82 9.51C7.1 12.19 9.81 14.9 12.49 16.18L13.92 14.75C14.06 14.61 14.3 14.57 14.5 14.66C16.55 15.5 18.75 15.92 21 15.92C21.6 15.92 22 16.32 22 16.92Z" fill="currentColor"/>
+                        </svg>
+                        <a href="tel:+917974970843">+91 7974970843</a>
+                    </div>
+                    
+                    <!-- Social media links -->
+                    <div class="social-links">
+                        <!-- GitHub link -->
+                        <a href="https://github.com/gunjan-gs" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- LinkedIn link -->
+                        <a href="https://www.linkedin.com/in/gunjansoni27/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- X (Twitter) link -->
+                        <a href="https://x.com/Gunjan_2712" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Instagram link -->
+                        <a href="https://www.instagram.com/gunjan.soni__/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact form with validation -->
+                <form class="contact-form contact-form-dark" data-aos="fade-up" data-aos-delay="400" id="contactForm">
+                    <!-- Name input field -->
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <!-- Email input field -->
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <!-- Subject input field -->
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    
+                    <!-- Message textarea field -->
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section with copyright information -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <!-- Dynamic copyright year that updates automatically -->
+                    <p>&copy; <span id="currentYear"></span> Gunjan Soni. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast notification container for user feedback -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- External library scripts -->
+    <!-- AOS (Animate On Scroll) library for scroll-triggered animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JavaScript file with all interactive functionality -->
+    <script type="module" defer src="script.js"></script>
+</body>
+</html>
